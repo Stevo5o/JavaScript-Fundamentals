@@ -1,3 +1,3 @@
 JavaScript-Fundamentals
 =======================
-So far Functions, OOP, Loops 
+So far basic Functions, OOP, Loops 
