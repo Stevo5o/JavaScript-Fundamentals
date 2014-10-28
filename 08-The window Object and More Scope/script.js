@@ -1,38 +1,7 @@
-var names = ["Jeremy", "Jeffrey", "Jennifer", "Jackie" ];
-var noNames = [];
-var i;
-
-do {
-	var element = names.pop();
-	alert(element);
-} while (names.length > 0);
-
-/* while (names.length > 0) {
-	var element = names.pop();
-	alert(element);
-} */
-
-/* for (i = 0, len = noNames.length; i < len; i++) {
-	var name = noNames[i];
-	alert(name);
-} // if the condition is false for the first iteration it will not run */
-
-
-/* for (i = 0, len = names.length; i < len; i++) {
-	var name = names[i];
-	alert(name);
-} */
-
-/* for (var i = 0; i < names.length; i = i + 1) {
-	var name = names[i];
-	alert(name);
-}
- */
-/* for (var i = 0; i < names.length; i = i + 1) {
-	var name = names[i];
-	alert(name);
-}
- */
-/* for (var i = 0; i < 10; i = i + 1) {
-	alert(i);
-} */
+(function() {
+	if (confirm("Do you want to take a look at XPS 13 Laptop, Developer Edition?")) {
+		location = "http://www.dell.com/ie/business/p/xps-13-linux/pd";
+	} else {
+		alert("OK stay here then!");
+	}
+}());
