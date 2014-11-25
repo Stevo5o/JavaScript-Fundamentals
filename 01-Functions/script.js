@@ -1,3 +1,4 @@
+// basic functions file
 var doCalulation = function(paramOne, paramTwo, fn) {
 	paramOne = paramOne + 3;
 	paramOne = paramOne + 1;
