@@ -13,7 +13,7 @@
    html = html + "<br />This was, too 2";
    html = html + "<br />This was, too 3";
    
-   pFoo.innerHTML = html; // remove content of element set to empty string ""
+   pFoo.innerHTML = html; // remove content of element - set to empty string ""
 
    //zx.innerHTML = "<strong>This was dynamically created</strong>";
    // zx.appendChild(content);
