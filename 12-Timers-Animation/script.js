@@ -7,12 +7,12 @@
               console.log("doSomething() executed " + (i + 1) + " times");
               i = i + 1;
 
-              if (i < 10) {
-                 setTimeout(doSomething, speed);
+              if (i > 9) {
+                 clearTimeout(timer);
               }
            };
 
-   var timer = setTimeout(doSomething, speed);
+   var timer = setInterval(doSomething, speed);
    
    // clearTimeout(timer);
 
