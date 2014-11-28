@@ -2,20 +2,25 @@
 (function () {
 
    var speed = 10,
-           moveBox = function () {
+           moveBox = function (moveBy) {
               var zx = document.getElementById("box"),
-                      left = zx.offsetLeft,
-                      moveBy = 3;
+                      left = zx.offsetLeft;
               
-              zx.style.left = left + moveBy + "px";
-              
-              if(left > 399) {
+                      if ((moveBy > 0 && left > 399) || (moveBy < 0 && left < 51)) {
                  clearTimeout(timer);
+                 timer = setInterval(function () {
+                    moveBox(moveBy * -1);
+                 }, speed);
               }
+
+
+              zx.style.left = left + moveBy + "px";
+
            };
 
-   var timer = setInterval(moveBox, speed);
-
+   var timer = setInterval(function () {
+      moveBox(3);
+   }, speed);
    // clearTimeout(timer);
 
    // alert("hello");
