@@ -1,19 +1,21 @@
 /* @ Stephen O'Connor */
 (function () {
 
-   var speed = 500,
-           i = 0,
-           doSomething = function () {
-              console.log("doSomething() executed " + (i + 1) + " times");
-              i = i + 1;
-
-              if (i > 9) {
+   var speed = 10,
+           moveBox = function () {
+              var zx = document.getElementById("box"),
+                      left = zx.offsetLeft,
+                      moveBy = 3;
+              
+              zx.style.left = left + moveBy + "px";
+              
+              if(left > 399) {
                  clearTimeout(timer);
               }
            };
 
-   var timer = setInterval(doSomething, speed);
-   
+   var timer = setInterval(moveBox, speed);
+
    // clearTimeout(timer);
 
    // alert("hello");
