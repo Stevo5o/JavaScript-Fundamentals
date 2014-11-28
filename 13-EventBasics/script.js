@@ -10,7 +10,7 @@
          document.body.className = className;
       };
       
-      // 0 level are volatile
+      // 0 level are volatile, below breaks the code
       // buttons[i].onclick = function() {};
    }
 
