@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+   <head>   
+   </head>
+   <body>
+      <script>
+         // In the following example, all String objects share a common split method. 
+         // The following code will display false and true. 
+         var s = new String("Sample");
+         document.write(s.hasOwnProperty("split"));
+         document.write("<br/>");
+         document.write(String.prototype.hasOwnProperty("split"));
+         document.write("<br>");         
+         // Output:
+         // false
+         // true
+         
+         // The following example determines whether the o object 
+         // contains a property named prop:
+         o = new Object();
+         o.prop = 'exists';
+         document.write("<br>");
+         document.write(o.prop);
+         function changeO() {
+            o.newprop = o.prop;
+            delete o.prop;
+            document.write("<br>");
+            document.write(o.prop);
+         }
+         
+         o.hasOwnProperty('prop');   // returns true
+         changeO();
+         o.hasOwnProperty('prop');   // returns false
+      </script>
+   </body>
+</html>
