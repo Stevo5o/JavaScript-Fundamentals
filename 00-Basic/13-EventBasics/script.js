@@ -13,5 +13,9 @@
       // 0 level are volatile, below breaks the code
       // buttons[i].onclick = function() {};
    }
+   
+    sayHi = function() {
+      alert("Hi there!");
+   };
 
 }());
