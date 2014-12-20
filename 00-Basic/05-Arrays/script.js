@@ -27,3 +27,8 @@ var sorted = people.sort();
 
 // document.getElementById("jsarray").innerHTML = names.concat(names2);
 document.getElementById("jsarraysort").innerHTML = sorted;
+
+var cars = ["Toyota", "Ford", "BMW"];
+      var sepCars = cars.join(" or ");
+document.getElementById("cars").innerHTML = sepCars;
+
