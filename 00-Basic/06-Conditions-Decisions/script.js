@@ -1,5 +1,5 @@
-var foo = "hello",
-	bar = 5;
+//var foo = "hello",
+//	bar = 5;
 	
 /* logical AND &&
 true && true = true
@@ -25,34 +25,59 @@ var foo; // undefined = false
 null = false 
 ****/
 
-if (bar === "5") {
-	alert("true");
-} else {
-	alert("false"); // false
+//if (bar === "5") {
+//	alert("true");
+//} else {
+//	alert("false"); // false
+//}
+//
+//if (foo ==="Hello") {
+//	alert("Hello");	
+//} else if (foo ==="hello") {
+//	alert("hello");	
+//} else if (foo ==="hellO") {
+//	alert("hellO");	
+//} else {
+//	alert("No match was found")
+//}
+//
+//if (!(foo !== "hello")) {
+//	alert("true");
+//}
+//
+//if (null) {
+//	alert("hi");
+//}
+//
+//alert(typeof null); // object
+
+
+/* switch */
+var day = new Date().getDay();
+switch (day) {
+   case 0:
+      x = "Sunday";
+      break;
+   case 1:
+      x = "Monday";
+      break;
+   case 2:
+      x = "Tuesday";
+      break;
+   case 3:
+      x = "Wednesday";
+      break;
+   case 4:
+      x = "Thursday";
+      break;
+   case 5:
+      x = "Friday";
+      break;
+   case 6:
+      x = "Saturday";
+      break;
 }
-
-if (foo ==="Hello") {
-	alert("Hello");	
-} else if (foo ==="hello") {
-	alert("hello");	
-} else if (foo ==="hellO") {
-	alert("hellO");	
-} else {
-	alert("No match was found")
-}
-
-if (!(foo !== "hello")) {
-	alert("true");
-}
-
-if (null) {
-	alert("hi");
-}
-
-alert(typeof null); // object
-
-
-
+alert(x);
 
 
 
