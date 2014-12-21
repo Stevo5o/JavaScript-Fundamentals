@@ -22,6 +22,14 @@
       <p>La de da</p>
       <button>Normal</button>
       <button>Changed</button>
+      <h2 id="heading" onmouseover="return changeMe()" onmouseout="return changeMeBack()">List of Events</h2>
+      <form>
+         Name: <input onfocus="return focusIn()" onblur="return blurOut()" type="text" name="name" /><br>
+         <input type="submit" value="submit" />
+      </form>
+      <ul id="eventlist">         
+      </ul>
       <script src="script.js"></script>   
+      <a href="listofJSevents.json"></a>
    </body>
 </html>

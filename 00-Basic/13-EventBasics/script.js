@@ -14,8 +14,28 @@
       // buttons[i].onclick = function() {};
    }
    
-    sayHi = function() {
-      alert("Hi there!");
+//    sayHi = function() {
+//             alert('Say "Hi" O\'Connor');
+//             alert("Say 'Hi'");
+//             alert("Say 'Hi' O'Connor");
+//   };
+   
+   changeMe = function() {
+      var heading = document.getElementById('heading');
+      heading.innerHTML = "Change on mouseover";
    };
-
+   
+   changeMeBack = function() {
+      var heading = document.getElementById('heading');
+      heading.innerHTML = "Event List";
+   };
+   
+   focusIn = function () {
+      alert('I am in the field');
+   };
+   
+   blurOut = function () {
+      alert('I am out the field');
+   };
+   
 }());

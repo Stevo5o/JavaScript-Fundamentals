@@ -1,0 +1,43 @@
+{
+   "event": "abort",
+   "desc": "Occours when user cancels loading of an image", 
+
+   "event": "blur",
+   "desc": "Occours when input focus is removed from a form element", 
+
+   "event": "click",
+   "desc": "Occours when the user clicks on a link or form element", 
+
+   "event": "change",
+   "desc": "Occours when the value of a form field is changed by the user", 
+
+   "event": "error",
+   "desc": "Occours when an error happens during the loading of a document or image", 
+
+   "event": "focus",
+   "desc": "Occours when input focus is given to a form element or a window", 
+
+   "event": "load",
+   "desc": "Occours when a page is loaded into the navigator", 
+
+   "event": "mouseout",
+   "desc": "Occours when the user moves the pointer off a link or clickable area", 
+
+   "event": "mouseover",
+   "desc": "Occours when moves the pointer over a hypertext link", 
+
+   "event": "reset",
+   "desc": "Occours when the user clears a form using the Reset button",
+
+   "event": "select",
+   "desc": "Occours when the user slects a form element's field", 
+
+   "event": "submit",
+   "desc": "Occours when a form is submitted", 
+
+   "event": "unload",
+   "desc": "Occours when the user leaves the page" 
+}   
+
+
+
