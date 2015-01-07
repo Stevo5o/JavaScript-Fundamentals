@@ -49,5 +49,54 @@ console.log(statement3);
 var path = "C:\\folder\\myfile.txt";
 console.log(path);
 
-var multiline = "This is line 1\nThis is line 2\nThis is\t line 3";
+var multiline = "This is line 1\n" +
+        "This is line 2\n" +
+        "This is\t line 3";
 console.log(multiline);
+
+var part1 = "Hello";
+var part2 = "World!";
+var whole = part1 + " " + part2;
+console.log(whole + "!!!!");
+
+var length = whole.length;
+console.log(whole + " " + length);
+
+var index = whole.indexOf("World");
+console.log(index);
+
+var index2 = whole.indexOf("world");
+console.log(index2);
+
+if (whole.indexOf("W") !== -1)
+{
+   console.log("W exists in the string");
+}
+else
+{
+   console.log("W does not exist in the string");
+}
+
+console.log(whole.charAt(1));
+
+var first = "Hello";
+var second = "hello";
+
+if (first.toLocaleLowerCase() === second.toLowerCase()) 
+{
+   console.log("The strings are equal");
+}
+else 
+{
+   console.log("The strings are not equal");
+}
+
+function compare(a, b)
+{
+   console.log(a + " < " + b, a < b);
+}
+
+compare('a', 'b');
+compare('a', 'A');
+compare('apples', 'oranges');
+compare('apples', 'applications');
