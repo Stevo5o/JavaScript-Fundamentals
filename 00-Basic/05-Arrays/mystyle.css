@@ -1,0 +1,14 @@
+/* 
+    Created on : 07-Jan-2015, 12:26:12
+    Author     : Stephen
+*/
+
+html {
+   background: silver;
+   font-family: source code pro;
+}
+
+#container {
+   padding:10px;   
+   display: inline-block;
+}

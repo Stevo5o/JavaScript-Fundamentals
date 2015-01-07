@@ -9,12 +9,12 @@ foo.push("new value");
 // alert(foo);
 
 var names = ["Peter", "Henry"],
-    names2 = ["Darragh", "Alan"];
-    
+        names2 = ["Darragh", "Alan"];
+
 var people = names.concat(names2);
 
 document.getElementById("jsarray").innerHTML = people;
-    
+
 var joined = people.join(", ");
 
 var reversed = people.reverse();
@@ -29,6 +29,16 @@ var sorted = people.sort();
 document.getElementById("jsarraysort").innerHTML = sorted;
 
 var cars = ["Toyota", "Ford", "BMW"];
-      var sepCars = cars.join(" or ");
+var sepCars = cars.join(" or ");
 document.getElementById("cars").innerHTML = sepCars;
 
+var container = document.getElementById("container");
+container.style.background = "black";
+container.style.color = "white";
+
+console.log(typeof foo);
+console.log(foo);
+
+for (var i = 0; i < foo.length; i++) {
+   console.log(i);
+}
