@@ -41,3 +41,4 @@ for(var i =0; i <= 10; i++) {
    document.getElementById("forloop").innerHTML += i + "<br>";
 }
 
+console.log("Hello");
