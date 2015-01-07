@@ -38,7 +38,3 @@ container.style.color = "white";
 
 console.log(typeof foo);
 console.log(foo);
-
-for (var i = 0; i < foo.length; i++) {
-   console.log(i);
-}
