@@ -8,5 +8,5 @@ javascript:
         }
 for (var i = 1; i < 25; i++)
 {
-   document.write(i + " = " + fibo(i) + "<br>");
+   console.log(i + " = " + fibo(i));
 }

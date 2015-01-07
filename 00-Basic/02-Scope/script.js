@@ -73,7 +73,7 @@
 //console.log("myColor after myFunc", myColor);
 ////console.log("myColor after myFunc", myNumber);
 //
-//document.write("This is a sentence", "<br>");
+//document.write("This is a sentence", "\n");
 
 // hoisting
 function doSomething(doit)
