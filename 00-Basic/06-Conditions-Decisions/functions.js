@@ -2,17 +2,25 @@
 (function ()
 {
    // say hello with two arguments
-   function sayHello(name, greeting)
+   sayHello = function(name, greeting)
    {
+      if(typeof name === 'undefined')
+      {
+         return 0;
+      }
       if(typeof greeting === 'undefined')
       {
          greeting = "Hello";
       }
       console.log(greeting + " World! " + name);
-   }
 
-   sayHello("SteJ", "Greetings");
+      return name.length;
+   };
+
+   console.log(sayHello("StephCake", "Greetings"));
    
-   sayHello("SteJ");
+   console.log(sayHello("SteJ"));
+
+   console.log(sayHello());
 
 }());
