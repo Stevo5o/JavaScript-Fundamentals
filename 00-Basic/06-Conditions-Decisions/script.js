@@ -77,8 +77,6 @@ switch (day) {
       x = "Saturday";
       break;
 }
-alert(x);
-
-
+// alert(x);
 
 
