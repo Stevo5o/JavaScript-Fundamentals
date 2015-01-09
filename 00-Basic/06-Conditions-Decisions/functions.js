@@ -1,4 +1,5 @@
 /* @ Stephen O'Connor */
+// immediately invoked anonymous function
 (function ()
 {
    // say hello with two arguments
@@ -53,7 +54,7 @@
    {
       targetFunction();
       targetFunction();
-   }
+   };
 
    callTwice(myFunction);
 }());
