@@ -21,10 +21,21 @@
       name: "SteJ",
       kills: ["Javascript", "Java", "Skipping"],
       "favorite color": "Purple",
-      greet: function()
+      greet: function (name, mood)
       {
-         console.log("Hello, I am SteJ");
+         name = name || "You";
+         mood = mood || "good";
+
+         console.log("Hello, " + name +
+                 " I am " + this.name +
+                 " and I am in a " + mood + " mood!");
       }
+   };
+
+   barry = {
+      name: "Barry",
+      // the same method correct behaviour
+      greet: stej.greet
    };
 
    // access a key with a space. string " "
@@ -33,6 +44,54 @@
    console.log(stej.name);
    console.log(stej["favorite color"]);
    console.log(stej["kills"].join(', '));
+
+   stej.name = "StephCake";
+
+   // this will be bound to stej
    stej.greet();
+
+   // this will be bound to barry
+   barry["greet"]("Sean", "great");
+
+   // this is incorrect, loses this, binding
+   stejGreet = stej.greet;
+
+   // calling the functon greet in stej
+   stej.greet.call(barry);
+
+   // using call method, function is an object. dynamic
+   stejGreet.call({name: "Jim"}, "Darragh", "awful");
+
+   // using apply method, uses array
+   stej.greet.apply(barry, ["Darragh", "bad"]);
+
+   args = ["John", "good"];
+   // dynamicially apply an array
+   stej.greet.apply(barry, args);
+
+   personPrototype =
+           {
+              name: 'Anonymous',
+              greet: function (name, mood)
+              {
+                 name = name || "You";
+                 mood = mood || "good";
+
+                 console.log("Hello, " + name +
+                         " I am " + this.name +
+                         " and I am in a " + mood + " mood!");
+              },
+              species: 'Homo Sapien'
+           };
+
+   function Person(name)
+   {
+      this.name = name;
+   }
+
+   Person.prototype = personPrototype;
+
+   stej = new Person("SteJ");
+
 }());
 
