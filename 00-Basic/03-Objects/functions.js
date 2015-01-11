@@ -69,6 +69,7 @@
    // dynamicially apply an array
    stej.greet.apply(barry, args);
 
+   // classes = prototype
    personPrototype =
            {
               name: 'Anonymous',
@@ -84,14 +85,17 @@
               species: 'Homo Sapien'
            };
 
+   // this is a constructor
    function Person(name)
    {
       this.name = name;
    }
-
+  
    Person.prototype = personPrototype;
 
+   // create a new object
    stej = new Person("SteJ");
+   barry = new Person("Barry");
 
 }());
 
