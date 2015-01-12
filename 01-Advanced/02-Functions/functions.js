@@ -31,14 +31,18 @@
 
    fn();
 
+   // utiltiy object with mehtod
+   // called once less memory
+   // anonoymous self invoking function   
    var utility = (function ()
    {
       var i = 0;
-      
+      // return a value to utility
       return {
-         
-         nameGen: function()
+         // a method
+         nameGen: function ()
          {
+            // create a closeure
             var name = "customName" + i;
             i++;
             return name;
