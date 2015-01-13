@@ -24,12 +24,12 @@
      console.log("splice: " + y); 
 
      // adding two arrays
-     z = x.concat(y);
+     z = x.concat("adding two arrays:" + y);
      a = z.concat("last item");
 
 
 
-     console.log(x);
+     console.log("This is x:" + x);
      console.log(y);
      console.log(z);
      console.log(a.toString());

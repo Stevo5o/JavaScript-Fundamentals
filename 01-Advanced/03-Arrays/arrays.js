@@ -78,5 +78,12 @@
    
    fruit.forEach(doSomeThingEach);
    console.log(fruit.map(doSomeThingMap).join(""));
+
+   var a = ["a", "b", "c"];
+a.forEach(function(entry) {
+    console.log(entry);
+});
+
+var cars = ["Toyota "]
    
 }());
