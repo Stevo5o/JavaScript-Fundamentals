@@ -83,7 +83,5 @@
 a.forEach(function(entry) {
     console.log(entry);
 });
-
-var cars = ["Toyota "]
    
 }());
