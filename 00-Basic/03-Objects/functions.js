@@ -95,7 +95,7 @@
 
    // create a new object
    stej = new Person("SteJ");
-   barry = new Person("Barry");
+   barry = new Person("Barry"); 
 
 }());
 
