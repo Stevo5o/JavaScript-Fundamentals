@@ -54,9 +54,6 @@
          else {
             console.log('No')
          }
-
-
-
 }() );
 
   
