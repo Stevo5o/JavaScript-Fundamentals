@@ -10,10 +10,11 @@
 (function() {
 
 	var form = document.getElementById("theForm");
-		button = form.myButton,
+	button = form.myButton,
 		textbox = form.myTextbox,
 		textarea = form.myTextArea,
-		select = form.dayOfWeek;
+		select = form.dayOfWeek,
+		color = form.color;
 
 	eventUtility.addEvent(form, "submit", function(evt) {
 		eventUtility.preventDefault(evt);
@@ -22,21 +23,31 @@
 	eventUtility.addEvent(button, "click", function(evt) {
 		var target = eventUtility.getTarget(evt);
 
-		// // traditional way
+		for (var i = 0, len = color.length; i < len; i++) {
+			if (color[i].checked) {
+				alert(color[i].value);
+			}
+		}
+
+		// // checkbox
+		// 	color.checked = true;
+
+
+		// // traditional way select
 		// var index = select.selectedIndex; // 3
 		// var option = select.options[index];
 
 		// alert(option.value);
 
-		// new way
-		var option = select.selectedOptions[0];
-		alert(option.value);
+		// // new way select
+		// var option = select.selectedOptions[0];
+		// alert(option.value);
 
-		select.remove(3);
+		// select.remove(3);
 
-		var wedOption = new Option("Wednesday", 3);
+		// var wedOption = new Option("Wednesday", 3);
 
-		select.add(wedOption, select.options[3]);
+		// select.add(wedOption, select.options[3]);
 
 
 
