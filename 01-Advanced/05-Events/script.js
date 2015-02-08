@@ -1,5 +1,5 @@
 /**
- * newjavascript.js Discription
+ * script.js Discription
  * @ Stephen O'Connor, 07-Feb-2015
  *
  * Dependencies: eventUtility.js
