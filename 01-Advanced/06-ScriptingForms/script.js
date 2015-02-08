@@ -23,11 +23,26 @@
 	eventUtility.addEvent(button, "click", function(evt) {
 		var target = eventUtility.getTarget(evt);
 
+		// // checkbox
+		// var pickedColors = [];
+
+		// radio button
+		var pickedColor = "";
+
 		for (var i = 0, len = color.length; i < len; i++) {
 			if (color[i].checked) {
-				alert(color[i].value);
+				// radio
+				pickedColor = color[i].value;
+				// // check box
+				// pickedColors.push(color[i].value);
 			}
 		}
+
+		// // checkbox
+		// alert(pickedColors.join(", "));
+
+		// radio button
+		alert(pickedColor);
 
 		// // checkbox
 		// 	color.checked = true;
