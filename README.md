@@ -1,3 +1,7 @@
 JavaScript-Fundamentals
 =======================
-Functions, OOP, Loops, shadowing, hoisting, functions as objects, events
+Functions, OOP, for - forEach loops, arrays, shadowing, hoisting
+
+Functions as objects, events, prototype inheritance
+
+Buttons, XMLHttpRequest	POST and GET, JSON
