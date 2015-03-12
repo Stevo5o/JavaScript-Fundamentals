@@ -1,36 +1,42 @@
 /**
- * script.js Discription
- * @ Stephen O'Connor, 09-Feb-2015
+ * script.js
+ * @ Stephen O'Connor, Febuary 2015
  *
- * Dependencies: data.json
- *
+ * Dependencies:
+ * jQuery
  */
 
-// immediately invoked anonymous function
-(function() {
 
-	var xhr = new XMLHttpRequest();
-
-	xhr.open("GET", "data.json", true);
-	xhr.setRequestHeader("Content-Type",
-		"application/json");
-
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState === 4) {
-			var status = xhr.status;
-
-			if ((status >= 200 && status < 300) ||
-				status === 304) {
-				var rss = JSON.parse(xhr.responseText)
-				for (var i = 0, len = rss.users.length; i < len; i++) {
-					console.log(rss.users[i].name);
-				}				
-			} else {
-				alert(status);
-			}
-		}
-	};
-
-	xhr.send(null);
-
-}());
+// jQuery AJAX call
+$.ajax({
+			url: 'data.json',
+			dataType: 'json',
+			type: 'get',
+			cache: false,
+			success: function(data) {
+				  // display links on page
+         var output = "";
+         $.each( data, function ( key, val )
+         {
+            for ( var i = 0; i < val.length; i++ )
+            {
+               var user = val[i];
+               output +=
+                       "<li><a id='" +
+                       user.id +
+                       "' href='#" +
+                       user.id + 
+                       "'>" +
+                       "&Tilde;" +
+                       user.username +
+                       "</a></li>";
+            }
+            $( 'ul#users' ).append( output );
+         } );
+      }
+   } );
+			
+	
+                
+ 
+                
