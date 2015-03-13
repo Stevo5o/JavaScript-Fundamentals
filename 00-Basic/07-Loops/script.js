@@ -43,7 +43,7 @@
 //
 //console.log("Hello");
 
-
+// Eloquent JS
 var total = 0,
 	count = 1;
 while (count <= 10) {
@@ -51,3 +51,12 @@ while (count <= 10) {
 	count++;
 }
 console.log('Total:' + total);
+
+function fac(n) {
+	if (n === 0)
+		return 1;
+	else {
+		return fac(n - 1) * n;
+	}
+}
+console.log(fac(8));

@@ -3,33 +3,30 @@
  * @ Stephen O'Connor, March 2015
  *
  * Dependencies:
- * jQuery
+ * rtj2.json
  */
 
+// immediately invoked anonymous function
+(function() {
 
-// jQuery AJAX call
-$.ajax({
-	url: 'data.json',
-	dataType: 'json',
-	type: 'get',
-	cache: false,
-	success: function(data) {
-		// display links on page
-		var output = "";
-		$.each(data, function(key, val) {
-			for (var i = 0; i < val.length; i++) {
-				var user = val[i];
-				output +=
-					"<li><a id='" +
-					user.id +
-					"' href='#" +
-					user.id +
-					"'>" +
-					"&Tilde;" +
-					user.username +
-					"</a></li>";
+	var xhr = new XMLHttpRequest();
+
+	xhr.open("GET", "rtj2.json", true);
+
+	xhr.setRequestHeader("Content-Type",
+		"application/json");
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4) {
+			var status = xhr.status;
+
+			if ((status >= 200 && status < 300) ||
+				status === 304) {
+				alert(xhr.responseText);
 			}
-			$('ul#users').append(output);
-		});
-	}
-});
+		}
+	};
+
+	xhr.send(null);
+
+}());
