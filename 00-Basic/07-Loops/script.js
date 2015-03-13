@@ -37,8 +37,16 @@
 	alert(i);
 } */
 
-for(var i =0; i <= 10; i++) {
-   document.getElementById("forloop").innerHTML += i + "<br>";
-}
+//for(var i =0; i <= 10; i++) {
+//   document.getElementById("forloop").innerHTML += i + "<br>";
+//}
+//
+//console.log("Hello");
 
-console.log("Hello");
+
+var	total = 0, count = 1;
+while (count <= 10) {	
+	total += count;
+	count++;
+}
+console.log('Total:' + total);
